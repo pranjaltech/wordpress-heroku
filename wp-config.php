@@ -28,9 +28,6 @@ if ( getenv('CLEARDB_DATABASE_URL') ) {
 /** The name of the database for WordPress */
 define('DB_NAME', trim($db_url['path'], '/'));
 
-echo "URL: ";
-print_r($db_url);
-
 /** MySQL database username */
 define('DB_USER', $db_url['user']);
 
