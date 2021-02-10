@@ -93,7 +93,8 @@ $table_prefix  = 'wp_';
  *
  * @link https://codex.wordpress.org/Debugging_in_WordPress
  */
-define('WP_DEBUG', getenv('WP_DEBUG') === 'true' ? true : false);
+define('WP_DEBUG', getenv('WP_DEBUG') === 'true' ? true : true);
+define('WP_DEBUG_DISPLAY', true);
 
 /** Enable cache (include 'wp-content/advanced-cache.php') */
 define('WP_CACHE', getenv('WP_CACHE') === 'true' ? true : false);
