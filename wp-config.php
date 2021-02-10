@@ -29,7 +29,7 @@ if ( getenv('CLEARDB_DATABASE_URL') ) {
 define('DB_NAME', trim($db_url['path'], '/'));
 
 echo "URL: ";
-echo $db_url;
+print_r($db_url);
 
 /** MySQL database username */
 define('DB_USER', $db_url['user']);
