@@ -16,12 +16,12 @@
         {
             "type": "package",
             "package": {
-                "name": "wordpress/wordpress-ja",
+                "name": "wordpress/wordpress",
                 "type": "webroot",
-                "version": "4.8.1",
+                "version": "5.6.1",
                 "dist": {
                     "type": "zip",
-                    "url": "https://ja.wordpress.org/wordpress-4.8.1-ja.zip"
+                    "url": "https://wordpress.org/wordpress-5.6.1.zip"
                 },
                 "require": {
                     "fancyguy/webroot-installer": "~1.1"
@@ -30,12 +30,12 @@
         }
     ],
     "require": {
-        "php": "7.1.12",
+        "php": "8.*",
         "ext-apcu": "*",
         "ext-gd": "*",
         "ext-mbstring": "*",
-        "wordpress/wordpress-ja": "*",
-        "wp-cli/wp-cli": "~1.2",
+        "wordpress/wordpress": "*",
+        "wp-cli/wp-cli": "*",
         "wpackagist-plugin/001-prime-strategy-translate-accelerator": "*",
         "wpackagist-plugin/amazon-s3-and-cloudfront": "*",
         "wpackagist-plugin/amazon-web-services": "*",
@@ -47,7 +47,7 @@
     },
     "extra": {
         "webroot-dir": "public",
-        "webroot-package": "wordpress/wordpress-ja",
+        "webroot-package": "wordpress/wordpress",
         "installer-paths": {
             "public/wp-content/plugins/{$name}/": ["type:wordpress-plugin"],
             "public/wp-content/themes/{$name}/": ["type:wordpress-theme"]
